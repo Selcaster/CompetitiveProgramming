@@ -1,20 +1,67 @@
-// Kodlasdirma.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+//TOPIC 6
+//duzbucaqli 3
+//#include<iostream>
+//using namespace std;
+//int main() 
+//{
+//	int n, m;
+//	cin >> n >> m;
+//	for (int i = 0;i < n;i++) 
+//	{
+//		for (int j = 0;j < m;j++)
+//			cout << '#';
+//		cout << endl;
+//	}
+//}
+//*Cercive
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	for (int i = 0;i < n;i++)cout << "*";
+//	cout << endl << "*";
+//	for (int i = 0;i < n - 2;i++)cout << " ";
+//	cout << "*" << endl;
+//	for (int i = 0;i < n;i++)cout << "*";
+//}
+//*cercive 3
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	if (n == 1)
+//	{
+//		cout << "*";
+//		return 0;
+//	}
+//	for (int i = 0;i < n;i++)cout << "*";
+//	for (int i = 0;i < n - 2;i++) 
+//	{
+//		cout << endl << "*";
+//		for (int j = 0;j < n - 2;j++)cout << " ";
+//		cout << "*";
+//	}
+//	cout << endl;
+//	for (int i = 0;i < n;i++)cout << "*";
+//}
+//*Cercive 4
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+	int n, m;
+	cin >> n >> m;
+	for (int i = 0;i < m;i++)cout << "*";
+	for (int i = 0;i < n - 2;i++)
+	{
+		cout << endl << "*";
+		for (int j = 0;j < m - 2;j++)cout << " ";
+		if (m > 1) cout << "*";
+	}
+	cout << endl;
+	if (n > 1)for (int i = 0;i < m;i++)cout << "*";
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
